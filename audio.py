@@ -45,4 +45,6 @@ pygame.mixer.music.play()
 
 # Keep the program running until the audio finishes
 while pygame.mixer.music.get_busy():
+
+    # Prevent the program from exiting 
     pygame.time.Clock().tick(10)
